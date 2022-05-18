@@ -1,8 +1,9 @@
 import requests
 import pprint
 import time
+from teleg import pas
 
-TOKEN = '5350081937:AAGbkMsecOR0d7mKTTUa7y8SqQYXsR8i0T0'
+TOKEN = pas()
 MAIN_URL = f'https://api.telegram.org/bot{TOKEN}'
 
 # Информация о боте

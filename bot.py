@@ -1,7 +1,7 @@
 import telebot
-
+from teleg import pas
 from main import HTMLparser
-TOKEN = '5350081937:AAGbkMsecOR0d7mKTTUa7y8SqQYXsR8i0T0'
+TOKEN = pas()
 
 bot = telebot.TeleBot(TOKEN)
 
