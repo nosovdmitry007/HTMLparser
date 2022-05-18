@@ -2,7 +2,7 @@ import telebot
 from teleg import pas
 from main import HTMLparser
 TOKEN = pas()
-#
+
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start', 'help'])
@@ -18,7 +18,6 @@ def search(message):
 
 @bot.message_handler(content_types=['text'])
 def serch(message):
-    print(message.text.lower())
     serc = HTMLparser(message.text.lower())
     for h in serc:
         bot.send_message(chat_id=message.from_user.id, text=h)
